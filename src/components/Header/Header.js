@@ -1,8 +1,12 @@
-import React from 'react'
-
+import logo from "../../assets/logo.svg"
 const Header = () => {
   return (
-    <div>Header</div>
+    <header>
+      <div>
+        <img src={logo} alt="" />
+        <h3>Rubidia</h3>
+      </div>
+    </header>
   )
 }
 

@@ -1,3 +1,12 @@
+https://www.framer.com/docs/examples/
+
+
+https://www.framer.com/blog/posts/react-portfolio/
+
+npm install framer-motion
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

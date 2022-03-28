@@ -1,6 +1,6 @@
 import { GlobalStyle } from "./globalStyles";
 import { Fragment, lazy, Suspense } from "react";
-import { Header } from "./components/Header/Header"
+//import { Header } from "./components/Header/Header"
 
 //Suspense and React.lazy to lazy load content of portfolio.  
 // const Home = lazy(() => import("./pages/Home"));
@@ -11,7 +11,7 @@ import { Header } from "./components/Header/Header"
 export default function MyApp() {
   return (
     <Fragment>
-      <Header />
+      <h1>Hello World</h1>
       {/* <Suspense fallback={null}>
         <GlobalStyle />
         <h1>Hello World</h1>

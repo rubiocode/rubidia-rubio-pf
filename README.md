@@ -1,7 +1,4 @@
-https://www.framer.com/docs/examples/
-
-
-https://www.framer.com/blog/posts/react-portfolio/
+https://www.youtube.com/watch?v=edr2o59Twrs
 
 npm install framer-motion
 

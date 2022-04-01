@@ -17,7 +17,9 @@ const Logo = () => {
     return (
         <LogoText>
             <Link to="/">
-                Rubi
+
+            {/* May not use logo */}
+                {/* Rubi */}
             </Link>      
         </LogoText>
     )

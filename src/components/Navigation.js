@@ -66,7 +66,7 @@ const Navigation = () => {
                         Projects
                     </MenuItem>
                 </Menu>
-                <Button text="Let's Connect" link="/contactme" />
+                <Button text="Download Resume" link="/contactme" />
                 
                 
             </NavBar>

@@ -7,7 +7,7 @@ ${'' /*  we need to account for the navbar height within the window */}
 min-height: ${props => `calc(100vh - ${props.theme.navHeight})`};
 width: 100vw;
 position: relative;
-background-color: ${props => props.theme.text};
+background-color: ${props => props.theme.body};
 
 `
 const Container = styled.div`

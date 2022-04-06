@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import TypeWriterText from '../TypeWriterText';
+import Video from '../Video';
+//import RoundTextBlack from '../assets/pngImage'; 
 
 const Section = styled.section`
 ${'' /*  we need to account for the navbar height within the window */}
@@ -14,7 +16,7 @@ const Container = styled.div`
 width: 75%;
 min-height: 80vh;
 margin: 0 auto;
-background-color: lightblue;
+${'' /* background-color: lightblue; */}
 
 display: flex;
 justify-content: center;
@@ -33,6 +35,36 @@ align-items: center;
 
 `
 
+const Round = styled.div`
+
+position: absolute;
+bottom: 2rem;
+right: 90%;
+width: 6rem;
+height: 6rem;
+
+
+img{
+    width: 100%;
+    heigh: auto;
+
+}
+`
+const Circle = styled.span`
+
+width: 3rem;
+height: 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+
+background-color: black;
+color: ${props => props.theme.body}
+`
+
+
+
 const Home = () => {
     return (
         <Section>
@@ -41,8 +73,14 @@ const Home = () => {
                     <TypeWriterText />
                 </Box>
                 <Box>
-                    <h1>video</h1>
+                    <Video />
                 </Box>
+                <Round>
+                <Circle>
+                    &#x2193;
+                </Circle>
+                    {/* <img src={RoundTextBlack} alt='Keep Scrolling Down' />*/}
+                </Round>
             </Container>
         </Section>
     )

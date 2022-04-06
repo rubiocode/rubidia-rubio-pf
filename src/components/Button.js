@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Btn = styled.button`
 display: inline-block;
-background-color: ${props => props.theme.text};
+background-color: black;
 color: ${props => props.theme.body};
 outline: none;
 border: none;
@@ -26,7 +26,7 @@ position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    border: 2px solid ${props => props.theme.text};
+    border: 2px solid black;
     width: 100%;
     height: 100%;
     border-radius: 50px;

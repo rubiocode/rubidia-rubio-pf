@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
 import Button from './Button'
+
+
 const Title = styled.h2`
 
 font-size: ${props => props.theme.fontxxl};
@@ -36,12 +38,14 @@ font-weight: 600;
 margin-bottom: 1rem;
 width: 80%;
 align-self: flex-start;
+
 `
 
 const ButtonContainer = styled.div`
 
 width: 80%;
 align-self: flex-start;
+
 `
 
 const TypeWriterText = () => {

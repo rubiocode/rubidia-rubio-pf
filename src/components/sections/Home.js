@@ -1,8 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import TypeWriterText from '../TypeWriterText';
 import Video from '../Video';
-//import RoundTextBlack from '../assets/pngImage'; 
+import RoundTextBlack from '../../assets/RoundTextBlack2.png'; 
 
 const Section = styled.section`
 ${'' /*  we need to account for the navbar height within the window */}
@@ -34,6 +34,12 @@ justify-content: center;
 align-items: center;
 
 `
+const rotate = keyframes`
+100%{
+    transform: rotate(1turn)
+}
+
+`
 
 const Round = styled.div`
 
@@ -47,9 +53,12 @@ height: 6rem;
 img{
     width: 100%;
     heigh: auto;
+    animation: ${rotate} 10s linear infinite;
 
 }
 `
+
+
 const Circle = styled.span`
 
 width: 3rem;
@@ -58,9 +67,19 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 50%;
+z-index: 1;
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
 
 background-color: black;
-color: ${props => props.theme.body}
+color: white;
+font-size: ${props => props.theme.fontxl};
+
+
 `
 
 
@@ -70,16 +89,16 @@ const Home = () => {
         <Section>
             <Container>
                 <Box>
-                    <TypeWriterText />
+                    <Video />
                 </Box>
                 <Box>
-                    <Video />
+                    <TypeWriterText />
                 </Box>
                 <Round>
                 <Circle>
                     &#x2193;
                 </Circle>
-                    {/* <img src={RoundTextBlack} alt='Keep Scrolling Down' />*/}
+                    <img src={RoundTextBlack} alt='Keep Scrolling Down' />
                 </Round>
             </Container>
         </Section>

@@ -66,10 +66,10 @@ const TypeWriterText = () => {
                             // })
                             .pauseFor(2000)
                             .deleteAll()
-                            .typeString('<span class="text-2">Hello</span>')
+                            .typeString('<span class="text-2">Coffee Addict!</span>')
                             .pauseFor(2000)
                             .deleteAll()
-                            .typeString('<span class="text-3">World</span>')
+                            .typeString('<span class="text-3">Hiking Enthusiast</span>')
                             .pauseFor(2000)
                             .deleteAll()
                             // .callFunction(() => {

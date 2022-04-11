@@ -38,7 +38,7 @@ const About = () => {
         <Section>
             <Container>
                 <Box>
-                    About Me
+                    About Me // 
                 </Box>
             </Container>
         </Section>
